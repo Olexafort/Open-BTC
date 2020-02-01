@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Open Coin</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container" style="padding-top: 30px; padding-bottom: 30px">
+        <h3 class="heading">Current Prices</h3>
+    </div>
+    <div class="container" style="padding-bottom: 30px">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <center>
+                        <img src="../img/btc.png" class="img-fluid" style="width: 50%" alt="...">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">Bitcoin</h5>
+                        <p class="card-text">Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network.</p>
+                        <center><a href="#" class="btn btn-primary" id="btcTarget">Set Bitcoin Target</a></center>
+                        <br><br>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="heading">USD Market Cap: </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Current</p>
+                                <h3 id="current_btc_usd" style="color: red"> 0 </h3>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Previous</p>
+                                <p id="previous_btc_usd" style="color: green"> 0 </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="heading">EUR Market Cap: </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Current</p>
+                                <h3 id="current_btc_eur" style="color: red"> 0 </h3>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Previous</p>
+                                <p id="previous_btc_eur" style="color: green"> 0 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <center>
+                        <img src="../img/eth.png" class="img-fluid" style="width: 50%" alt="...">
+                    </center>
+                    <div class="card-body">
+                        <h5 class="card-title">Ethereum</h5>
+                        <p class="card-text">Ethereum is a global, open-source platform for decentralized applications. On Ethereum, you can write code that controls digital value, runs exactly as programmed, and is accessible anywhere in the world.</p>
+                        <center><a href="#" class="btn btn-primary">Set Ethereum Target</a></center>
+                        <br><br>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="heading">USD Market Value: </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Current</p>
+                                <h3 id="current_eth_usd" style="color: red"> 0 </h3>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Previous</p>
+                                <p id="previous_eth_usd" style="color: green"> 0 </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="heading">EUR Market Value: </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Current</p>
+                                <h3 id="current_eth_eur" style="color: red"> 0 </h3>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Previous</p>
+                                <p id="previous_eth_eur" style="color: green"> 0 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding: 30px, 0px, 30px, 0px;">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Open BTC is was developed using Electron JavaScript, a Framework used to develop native desktop apps using web technologies.</p>
+                <p>All Rights Reserved <a href="https://www.olexafort.com">Olexafort Software</a></p>
+            </div>
+            <div class="col-md-4">
+                <p><a href="github.com">Visit Github</a></p>
+                <p><a href="bitbucket.com">Visit Bitbucket</a></p>
+                <p><a href="olexafort.com/contact">Hire Me</a></p>
+                <p><a href="mailto:olelnash@gnail.com">Collaborate on Projects</a></p>
+            </div>
+            <div class="col-md-4">
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" style="width: 300px" placeholder="Leave Message..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-warning" name="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

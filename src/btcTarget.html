@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Set BTC Target</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <div class="container" style="padding-bottom: 20px; padding-top:20px">
+        <div class="row">
+            <div class="col-">
+                <p>Last BTC USD Target</p>
+                <h2 class="heading"> 0 </h2>
+            </div>
+            <div class="col">
+                <p>Last EUR USD Target</p>
+                <h2 class="heading"> 0 </h2>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <input class="form-control" id="usd_target">
+            </div>
+            <div class="col">
+                <input class="form-control" id="eth_target">
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-warning btn-block" id="closeBTCModal">Close Window</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary btn-block">Set Target</button>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="btcTarget.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+    "name": "btc",
+    "version": "1.0.0",
+    "description": "BTC Price watch App",
+    "main": "main.js",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "electron": "^7.1.11"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Olel Nashon",
+    "license": "ISC"
+}
